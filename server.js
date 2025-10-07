@@ -24,6 +24,17 @@ app.get('/', (req, res) => {
   res.render('index', pageData);
 });
 
+app.get('/marker', (req, res) => {
+
+  const pageData = {
+    title: 'صفحه اصلی'
+  };
+  
+  res.render('marker', pageData);
+});
+
+
+
 app.post('/update-content', (req, res) => {
   const { section, newContent } = req.body;
   
