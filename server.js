@@ -16,6 +16,7 @@ app.get('/', (req, res) => {
     title: 'صفحه اصلی',
     heading: 'خوش آمدید',
     content: 'این محتوای پیش‌فرض صفحه است.',
+    currency_price:1130000,
     features: ['ویژگی اول', 'ویژگی دوم', 'ویژگی سوم'],
     user: null
   };
@@ -34,5 +35,5 @@ app.post('/update-content', (req, res) => {
 app.use(express.static('public'));
 
 app.listen(port, () => {
-  console.log(`سرور در حال اجرا در http://localhost:${port}`);
+  console.log(`Server Started at Address : http://localhost:${port}`);
 });
