@@ -33,6 +33,14 @@ app.get('/marker', (req, res) => {
   res.render('marker', pageData);
 });
 
+app.get('/whiper', (req, res) => {
+
+  const pageData = {
+    title: 'صفحه اصلی'
+  };
+  
+  res.render('whiper', pageData);
+});
 
 
 app.post('/update-content', (req, res) => {
