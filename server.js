@@ -41,7 +41,14 @@ app.get('/whiper', (req, res) => {
   
   res.render('whiper', pageData);
 });
+app.get('/leak-tester', (req, res) => {
 
+  const pageData = {
+    title: 'صفحه اصلی'
+  };
+  
+  res.render('leak-tester', pageData);
+});
 
 app.post('/update-content', (req, res) => {
   const { section, newContent } = req.body;
