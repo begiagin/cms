@@ -960,8 +960,9 @@ section,
 .hero .welcome h2 {
   margin: 0;
   font-size: 48px;
+
   font-weight: 700;
-  color: var(--bread-crumb-color);
+  color: yellow;
 }
 
 .hero .welcome p {
